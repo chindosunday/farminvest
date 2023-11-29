@@ -116,7 +116,7 @@
                     <!--post-topbar end-->
                     <div class="posts-section">
                       <!-- posts and stories -->
-                      <div class="post-bar">
+                      {{-- <div class="post-bar">
                         <div class="post_topbar">
                           <div class="usy-dt">
                             <img src="./index_files/us-pic.png" alt="" />
@@ -206,7 +206,7 @@
                           </ul>
                           <a href=""><i class="fas fa-eye"></i>Views 50</a>
                         </div>
-                      </div>
+                      </div> --}}
                       <!--post-bar end-->
                       <div class="posty">
                         <div class="post-bar no-margin">
