@@ -182,24 +182,30 @@
                                 amet...
                                 <a href="" title="">view more</a>
                               </p>
-                              <ul class="skill-tags">
-                                <li>
-                                  <a href="" title="">HTML</a>
-                                </li>
-                                <li>
-                                  <a href="" title="">PHP</a>
-                                </li>
-                                <li>
-                                  <a href="" title="">CSS</a>
-                                </li>
-                                <li>
-                                  <a href="" title="">Javascript</a>
-                                </li>
-                                <li>
-                                  <a href="" title="">Wordpress</a>
-                                </li>
-                              </ul>
-                            </div>
+                              <div class="">
+                                <ul class="skill-tags">
+                                  <li>
+                                    <button>Likes</button>
+                                  </li>
+                                  <li>
+                                    <button id="comment">Comment</button>
+                                  </li>
+                                  <li>
+                                    <button>Share</button>
+                                  </li>
+
+                                </ul>
+                              </div>        
+                              <div class="comment_box">
+                                <form>
+                                  <input
+                                    type="text"
+                                    placeholder="Post a comment"
+                                  />
+                                  <button type="submit">Send</button>
+                                </form>
+                              </div>                   
+                             </div>
                             <div class="job-status-bar">
                               <ul class="like-com">
                                 <li>
@@ -216,7 +222,9 @@
                               </ul>
                               <a href=""><i class="fas fa-eye"></i>Views 50</a>
                             </div>
+                            
                           </div>
+                          
                           <!--post-bar end-->
                           <div class="comment-section">
                             <a href="" class="plus-ic">
@@ -313,7 +321,7 @@
                               <div class="cm_img">
                                 <img src="./index_files/bg-img4.png" alt="" />
                               </div>
-                              <div class="comment_box">
+                              {{-- <div class="comment_box">
                                 <form>
                                   <input
                                     type="text"
@@ -321,7 +329,7 @@
                                   />
                                   <button type="submit">Send</button>
                                 </form>
-                              </div>
+                              </div> --}}
                             </div>
                             <!--post-comment end-->
                           </div>
@@ -1131,5 +1139,25 @@
       id="loom-companion-mv3"
       ext-id="liecbddmkiiihnedobmlmillhodjkdmb"
     ></div>
+
+
+
+    <script type="text/javascript" src="js/jquery.min.js.download"></script>
+    <script>
+
+
+    $(document).ready(function () {
+      $('.comment_box').hide();
+
+      $('#comment').on('click', function () {
+        $('.comment_box').show();
+      });
+    });
+    
+    </script>
+
+
+
+
   </body>
 </html>
